@@ -1,1 +1,30 @@
 # networkScan
+
+## Gerekli Kutuphaneler
+
+Projenin çalışması için `scapy` ve `configparser` kutuphanelerinin kurulmasi gerekir.
+
+```
+pip install scapy
+```
+```
+pip install configparser
+```
+
+## Projeyi Calistirma
+
+Projeyi calistirmak icin `root` haklariyla `network.py` dosyasini çalistirmak gerekir.
+
+```
+sudo python network.py
+```
+
+Ilk calistirmada ag taramasi yapar ve `config.conf` dosyasina MAC ve IP adreslerini kaydeder.
+`config.conf` icindeki `firsttime` degiskenini 1 yapar.
+Ikinci calistirmada ise dosyadaki mac ve ip adresleriyle yeni gelen mac ve ip adreslerini karsilatirir.
+
+MAC adresleri ayniysa IP adreslerine bakilir.
+IP adresleri ayni degilse `config.conf` dosyasina ekler.
+MAC adresi ayni IP adresi farkliysa guncellemek isteyip istemedigini kullaniciya sorar.
+
+MAC adresleri farkliysa yeni bir cihaz aga katilmistir ve bunu da eklemek isteyip istemedigini kullaniciya sorar.
