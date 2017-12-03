@@ -21,7 +21,7 @@ sudo python network.py
 
 Ilk calistirmada ag taramasi yapar ve `config.conf` dosyasina MAC ve IP adreslerini kaydeder.
 `config.conf` icindeki `firsttime` degiskenini 1 yapar.
-Ikinci calistirmada ise dosyadaki mac ve ip adresleriyle yeni gelen mac ve ip adreslerini karsilatirir.
+Ikinci calistirmada ise dosyadaki MAC ve IP adresleriyle yeni gelen MAC ve IP adreslerini karsilatirir.
 
 MAC adresleri ayniysa IP adreslerine bakilir.
 IP adresleri ayni degilse `config.conf` dosyasina ekler.
