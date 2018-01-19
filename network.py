@@ -10,7 +10,6 @@ ip=[]
 def printConf():
 	for i in range(len(mac)):
         	config['ARP'][ip[i]]=mac[i]
-        	print (i)
         	i=i+1
         	with open('config.conf','w') as configfile:
                 	config.write(configfile)
