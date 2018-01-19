@@ -28,3 +28,5 @@ IP adresleri ayni degilse `config.conf` dosyasina ekler.
 MAC adresi ayni IP adresi farkliysa guncellemek isteyip istemedigini kullaniciya sorar.
 
 MAC adresleri farkliysa yeni bir cihaz aga katilmistir ve bunu da eklemek isteyip istemedigini kullaniciya sorar.
+
+Not : `config.conf` dosyası içinde subnet 192.168.2.0/24 belirtilmiştir. Kendi subnetiniz bu değilse `config.conf` dosyasından bu değeri değiştirmeniz gerekmektedir.
