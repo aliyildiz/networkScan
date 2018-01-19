@@ -50,7 +50,8 @@ else:
                 	for j in range (len(value)):
 				if(mac[i]==value[j]):
                         		if(ip[i]!=key[j]):
-						answer=raw_input("Aginizdaki bir cihazin IP adresi ("+key[j]+") degismis guncellemek istiyor musunuz?\n-Yeni IP adresi=("+ip[i]+")(e/h):\n")
+						answer=raw_input("There is a changes device IP ("+key[j]+") do you want to update?\n-New IP adress=("+ip[i]+")(e/h):\n")
+						#answer=raw_input("Aginizdaki bir cihazin IP adresi ("+key[j]+") degismis guncellemek istiyor musunuz?\n-Yeni IP adresi=("+ip[i]+")(e/h):\n")
 						if(answer=='e' or answer=='E'):
 							with open('config.conf','w') as configfile:
 								config.remove_option('ARP',key[j])
@@ -61,7 +62,8 @@ else:
 						elif(answer=='h' or answer=='H'):
 							continue
 		else:
-			answer2=raw_input("Aga yeni cihaz katilmis eklenmesini istiyor musunuz?\n-MAC=("+mac[i]+")-IP=("+ip[i]+")(e/h):\n")
+			answer2=raw_input("There is a new device on the network do you want to add\n-MAC=("+mac[i]+")-IP=("+ip[i]+")(e/h):\n")
+			#answer2=raw_input("Aga yeni cihaz katilmis eklenmesini istiyor musunuz?\n-MAC=("+mac[i]+")-IP=("+ip[i]+")(e/h):\n")
 			if(answer2=='e' or answer2=='E'):
 				config['ARP'][ip[i]]=mac[i]
 				with open('config.conf','w') as configfile:
